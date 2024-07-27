@@ -1,0 +1,175 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #f1c40f;
+  background-color: #e74c3c;
+  padding: 25px;
+  text-align: center;
+  margin: 0;
+  font-size: 100px;
+}
+
+.container {
+  padding-top: 20px;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#output {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #ececec;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #bdc3c7;
+  background-color: #ecf0f1;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.card:hover {
+  box-shadow: 2px 2px 5px #a0a5a8;
+  background-color: #dadfe0;
+}
+
+
+.card img.sprite {
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+
+.card .pills .pill {
+  background-color: #34495e;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  box-shadow: 2px 2px 5px #b3acac;
+}
+
+.pills .pill.grass {
+  background-color: #27ae60;
+}
+
+.pills .pill.poison {
+  background-color: #9b59b6;
+}
+
+.pills .pill.fire {
+  background-color: #e74c3c;
+}
+
+.pills .pill.water {
+  background-color: #3498db;
+}
+
+.pills .pill.flying {
+  background-color: #f1c40f;
+}
+
+.pills .pill.bug {
+  background-color: #e67e22;
+}
+
+.pills .pill.normal {
+  background-color: #bdc3c7;
+}
+
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0000009e;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.modal.active{
+  opacity: 1;
+}
+
+.modal .modal-card{
+    background-color: #fff;
+    width: 800px;
+    margin: 100px auto;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 300px;
+    transition: all 0.5s;
+}
+.modal .modal-card.active{
+  top: 0px;
+}
+
+.modal .modal-card .poke-img img{
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal .modal-card h2 {
+  margin: 5px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.info-group {
+  display: flex;
+}
+
+.info-group .info{
+  width: 50%;
+  border: 1px solid #eee;
+}
+
+.info-group .info .info-title{
+  font-size: 32px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  margin: 0;
+}
+
+.info-group .info table{
+  width: 100%
+}
+
+.info-group .info table th{
+  text-align: left;
+}
+
+.info-group .info table th, .info-group .info table td{
+  padding: 5px;
+}
+
+.info-group .info .stats-bar-td {
+  width: 200px;
+}
+.info-group .info .stats-bar-td .stats-bar {
+  height: 10px;
+  background-color: #bdc3c7;
+  border-radius: 5px;
+}
+.info-group .info .stats-bar-td .stats-bar .stats-bar-fill {
+  height: 10px;
+  background-color: #27ae60;
+  border-radius: 5px;
+}
